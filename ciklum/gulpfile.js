@@ -29,7 +29,7 @@ function html() {
 }
 
 function css() {
-  return src('app/src/scss/**/*.scss')
+  return src('app/src/scss/style.scss')
     .pipe(autoprefixer({
       cascade: false
     }))
