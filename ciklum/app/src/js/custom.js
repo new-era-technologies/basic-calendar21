@@ -55,19 +55,25 @@ function getFromStore() {
 function drawEvent(obj) {
     const trId = document.getElementById(obj.time);
     if (obj.days === 'Monday') {
-        trId.children[1].innerHTML = obj.name + '<button type="button" class="btn btn-outline-light border-0">x</button>';
+        trId.children[1].innerHTML = obj.name + `<button type="button" class="btn btn-outline-light border-0" onClick="removeEvent(${obj.id})">x</button>`;
         trId.children[1].classList.add('bg-success');
     } else if (obj.days === 'Tuesday') {
-        trId.children[2].innerHTML = obj.name + '<button type="button" class="btn btn-outline-light border-0">x</button>';
+        trId.children[2].innerHTML = obj.name + `<button type="button" class="btn btn-outline-light border-0" onClick="removeEvent(${obj.id})">x</button>`;
         trId.children[2].classList.add('bg-success');
     } else if (obj.days === 'Wednesday') {
-        trId.children[3].innerHTML = obj.name + '<button type="button" class="btn btn-outline-light border-0">x</button>';
+        trId.children[3].innerHTML = obj.name + `<button type="button" class="btn btn-outline-light border-0" onClick="removeEvent(${obj.id})">x</button>`;
         trId.children[3].classList.add('bg-success');
     } else if (obj.days === 'Thursday') {
-        trId.children[4].innerHTML = obj.name + '<button type="button" class="btn btn-outline-light border-0">x</button>';
+        trId.children[4].innerHTML = obj.name + `<button type="button" class="btn btn-outline-light border-0" onClick="removeEvent(${obj.id})">x</button>`;
         trId.children[4].classList.add('bg-success');
     } else if (obj.days === 'Friday') {
-        trId.children[5].innerHTML = obj.name + '<button type="button" class="btn btn-outline-light border-0">x</button>';
+        trId.children[5].innerHTML = obj.name + `<button type="button" class="btn btn-outline-light border-0" onClick="removeEvent(${obj.id})">x</button>`;
         trId.children[5].classList.add('bg-success');
     }
+}
+
+//remove from calendar
+function removeEvent(id) {
+    self.localStorage.removeItem(id);
+    location.reload();
 }
