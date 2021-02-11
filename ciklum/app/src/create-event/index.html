@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <title>basic-calendar21</title>
+    <meta name='description' content="" />
+    <meta name="keywords" content="" />
+    <!-- CSS bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../build/css/main.css" />
+</head>
+
+<body>
+
+    <!-- BEGIN BODY -->
+
+    <div class="main-wrapper">
+
+        <div class="container">
+
+            <form method="POST" id="create-event-form">
+                <div>
+                    <div class="col-6">
+                        <div class="row align-items-center mt-5">
+                            <div class="col-6">
+                                <label for="name" class="col-form-label">Name of the event: </label>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control border-2 border-dark" id="name" name="name">
+                            </div>
+                        </div>
+                        <div class="row align-items-center mt-5">
+                            <div class="col-6">
+                                <label for="parts" class="col-form-label">Participants: </label>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select border-dark border-2" aria-label="parts" id="parts" name="parts">
+                                    <option value="Maria" selected>Maria</option>
+                                    <option value="Bob">Bob</option>
+                                    <option value="Alex">Alex</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mt-5">
+                            <div class="col-6">
+                                <label for="days" class="col-form-label">Day: </label>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select border-dark border-2" aria-label="days" id="days" name="days">
+                                    <option value="Monday" selected>Monday</option>
+                                    <option value="Tuesday">Tuesday</option>
+                                    <option value="Wednesday">Wednesday</option>
+                                    <option value="Thursday">Thursday</option>
+                                    <option value="Friday">Friday</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mt-5">
+                            <div class="col-6">
+                                <label for="time" class="col-form-label">Time: </label>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select border-dark border-2" aria-label="time" id="time" name="time">
+                                    <option value="10:00" selected>10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 mt-5 ms-auto">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="../../build/index.html" class="btn btn-secondary border-2 border-dark col-5"
+                                role="button" data-bs-toggle="button">Cancel</a>
+                            <button type="submit" class="btn btn-secondary border-2 border-dark col-5" id="submit">Create</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- BODY EOF   -->
+
+    <!-- JavaScript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="../../build/js/main.js"></script>
+</body>
+
+</html>
