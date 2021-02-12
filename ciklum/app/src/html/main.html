@@ -8,7 +8,7 @@
                 <td id="Wednesday" class="text-center fw-bold">Wed</td>
                 <td id="Thursday" class="text-center fw-bold">Thu</td>
                 <td id="Friday" class="text-center fw-bold">Fri</td>
-              </tr>
+            </tr>
         </thead>
         <tbody class="table-secondary">
             <tr id="10:00">
@@ -83,6 +83,19 @@
                 <td class="table-light text-center"></td>
                 <td class="table-light text-center"></td>
             </tr>
-          </tbody>
+        </tbody>
     </table>
+    <div id="modal" class="modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-secondary border-2 border-dark">
+                <div class="modal-body">
+                    <p>Are you sure you want to delete <span id="ev-name"></span> event?</p>
+                </div>
+                <div class="mb-3 d-flex justify-content-evenly align-items-center">
+                    <button type="button" class="btn btn-light border-2 border-dark col-5" data-bs-dismiss="modal">No</button>
+                    <button id="rem-event" type="button" class="btn btn-light border-2 border-dark col-5">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
